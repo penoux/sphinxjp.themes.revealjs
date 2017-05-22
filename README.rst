@@ -1,6 +1,6 @@
-============================================
-sphinxjp.themes.revealjs 0.3.0
-============================================
+==============================
+sphinxjp.themes.revealjs 0.3.5
+==============================
 
 reveal.js style presentation theme for Sphinx.
 
@@ -9,24 +9,28 @@ reveal.js style presentation theme for Sphinx.
 
 Output Sample
 =============
+
 :output: http://packages.python.org/sphinxjp.themes.revealjs/
 :source: http://packages.python.org/sphinxjp.themes.revealjs/_sources/index.txt
 
 
 Features
 ========
+
 * provide ``revealjs`` directive for reveal.js presetation slide control.
 * provide ``revealjs`` theme for render presetation.
 
 
 Set up
 ======
+
 Make environment with pip::
 
     $ pip install sphinxjp.themes.revealjs
 
 Convert Usage
 =============
+
 setup conf.py with::
 
     extensions = ['sphinxjp.themes.revealjs']
@@ -38,10 +42,10 @@ and run::
     $ make html
 
 Writing Custom Directives
-=============================
+=========================
 
 revealjs
---------------------
+--------
 
 This directive crate a slide section for reveal.js.
 
@@ -75,7 +79,7 @@ You can set various directive options.
 
 
 class
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~
 
 Set 'class' attribute to 'section' tag.
 
@@ -86,7 +90,7 @@ Set 'class' attribute to 'section' tag.
 
 
 noheading
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
 
 It does not display the title heading.
 
@@ -96,7 +100,7 @@ It does not display the title heading.
      :noheading:
 
 title-heading
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 You can change the size of the title tag. h1〜h2
 
@@ -107,7 +111,7 @@ You can change the size of the title tag. h1〜h2
 
 
 subtitle
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~
 
 You can set subtitle text.
 
@@ -118,7 +122,7 @@ You can set subtitle text.
 
 
 subtitle-heading
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
 
 You can change the size of the subtitle tag. h1〜h2
 
@@ -129,7 +133,7 @@ You can change the size of the subtitle tag. h1〜h2
      :subtitle-heading: h4
 
 data-autoslide
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~
 
 Number of milliseconds between automatically proceeding to the next slide
 
@@ -140,7 +144,7 @@ Number of milliseconds between automatically proceeding to the next slide
 
 
 data-markdown
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~
 
 You can write in Markdown syntax to use the data-markdown option.
 
@@ -166,7 +170,7 @@ You can read the external Markdown.
 
 
 data-transition
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Change transition style by the following pattern.
 
@@ -184,7 +188,7 @@ Change transition style by the following pattern.
 
 
 data-transition-speed
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
 
 Change transition speed by the following pattern.
 
@@ -199,7 +203,7 @@ Change transition speed by the following pattern.
 
 
 data-background
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
 
 Change background settings.
 
@@ -213,7 +217,7 @@ Change background settings.
 
 
 data-state
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
 
 If you set data-state on a slide, "somestate" will be applied as a class on the document element when that slide is opened.
 This allows you to apply broad style changes to the page based on the active slide.
@@ -233,7 +237,7 @@ Furthermore you can also listen to these changes in state via JavaScript
 
 
 rv_code
----------------------
+-------
 
 ::
 
@@ -258,7 +262,7 @@ rv_code
 
 
 rv_small
----------------------
+--------
 
 This directive can be used when writing the text smaller.
 
@@ -271,7 +275,7 @@ This directive can be used when writing the text smaller.
    Created by `tell-k <http://github.com/tell-k>`_ / `@tell-k <http://twitter.com/tell_k>`_
 
 rv_note
----------------------
+-------
 
 This directive can be used when creating some notes for presenter. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 
@@ -286,117 +290,137 @@ This directive can be used when creating some notes for presenter. They'll be hi
    Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
 
 Customize Config
-=============================
+================
 
 By changing html_theme_options, you can change the settings for the whole.
 
 ::
 
+  html_theme_options = {
+      # Set the lang attribute of the html tag. Defaults to 'ja'
+      'lang': 'en',
 
- html_theme_options = {
-     # Set the lang attribute of the html tag. Defaults to "ja"
-     "lang": "ja",
+      # The 'normal' size of the presentation, aspect ratio will be preserved
+      # when the presentation is scaled to fit different resolutions
+      'width': 960,
+      'height': 700,
 
-     # The "normal" size of the presentation, aspect ratio will be preserved
-     # when the presentation is scaled to fit different resolutions
-     "width": 960,
-     "height": 700,
+      # Factor of the display size that should remain empty around the content
+      'margin': 0.1,
 
-     # Factor of the display size that should remain empty around the content
-     "margin": 0.1,
+      # Bounds for smallest/largest possible scale to apply to content
+      'min_scale': 0.2,
+      'max_scale': 1.0,
 
-     # Bounds for smallest/largest possible scale to apply to content
-     "min_scale": 0.2,
-     "max_scale": 1.0,
+      # Display controls in the bottom right corner
+      'controls': True,
 
-     # Display controls in the bottom right corner
-     "controls": True,
+      # Display a presentation progress bar
+      'progress': True,
 
-     # Display a presentation progress bar
-     "progress": True,
+      # Set default timing of 2 minutes per slide
+      'default_timing': 120,
 
-     # Push each slide change to the browser history
-     "history": True,
+      # Display the page number of the current slide
+      'slide_number': False,
 
-     # Enable keyboard shortcuts for navigation
-     "keyboard": True,
+      # Push each slide change to the browser history
+      'history': True,
 
-     # Enable the slide overview mode
-     "overview": True,
+      # Enable keyboard shortcuts for navigation
+      'keyboard': True,
 
-     # Vertical centring of slides
-     "center": True,
+      # Enable the slide overview mode
+      'overview': True,
 
-     # Enables touch navigation on devices with touch input
-     "touch": True,
+      # Vertical centering of slides
+      'center': True,
 
-     # Loop the presentation
-     "loop": False,
+      # Enables touch navigation on devices with touch input
+      'touch': True,
 
-     # Change the presentation direction to be RTL
-     "rtl": False,
+      # Loop the presentation
+      'loop': False,
 
-     # Turns fragments on and off globally
-     "fragments": True,
+      # Change the presentation direction to be RTL
+      'rtl': False,
 
-     # Number of milliseconds between automatically proceeding to the
-     # next slide, disabled when set to 0, this value can be overwritten
-     # by using a data-autoslide attribute on your slides
-     "auto_slide": 0,
+      # Randomizes the order of slides each time the presentation loads
+      'shuffle': False,
 
-     # Enable slide navigation via mouse wheel
-     "mouse_wheel": False,
+      # Turns fragments on and off globally
+      'fragments': True,
 
-     # Apply a 3D roll to links on hover
-     "rolling_links": True,
+      # Flags if the presentation is running in an embedded mode,
+      # i.e. contained within a limited portion of the screen
+      'embedded': False,
 
-     # Opens links in an iframe preview overlay
-     "preview_links": False,
+      # Flags if we should show a help overlay when the questionmark
+      # key is pressed
+      'help': True,
 
-     # Theme (black/white/league/beige/sky/night/serif/simple/solarized)
-     "theme": "black",
+      # Flags if speaker notes should be visible to all viewers
+      'show_notes': False,
 
-     # Transition style (default(=convex)/none/fade/slide/concave/zoom)
-     "transition": "default",
+      # Global override for autolaying embedded media (video/audio/iframe)
+      # - : Media will only autoplay if data-autoplay is present
+      # - True: All media will autoplay, regardless of individual setting
+      # - False: No media will autoplay, regardless of individual setting
+      #'autoPlayMedia': '',
 
-     # Transition speed (default/fast/slow)
-     "transition_speed": "default",
+      # Number of milliseconds between automatically proceeding to the
+      # next slide, disabled when set to 0, this value can be overwritten
+      # by using a data-autoslide attribute on your slides
+      'auto_slide': 0,
 
-     # Transition style for full page slide backgrounds (default(=convex)/none/fade/slide/concave/zoom)
-     "background_transition": "default",
+      # Stop auto-sliding after user input
+      'auto_slide_stoppable': True,
 
-     # Display the page number of the current slide
-     "slide_number": False,
+      # Use this method for navigation when auto-sliding
+      'auto_slide_method': 'Reveal.navigateNext',
 
-     # Flags if the presentation is running in an embedded mode,
-     # i.e. contained within a limited portion of the screen
-     "embedded": False,
+      # Enable slide navigation via mouse wheel
+      'mouse_wheel': False,
 
-     # Stop auto-sliding after user input
-     "auto_slide_stoppable": True,
+      # Hides the address bar on mobile devices
+      'hide_address_bar': True,
 
-     # Hides the address bar on mobile devices
-     "hide_address_bar": True,
+      # Opens links in an iframe preview overlay
+      'preview_links': False,
 
-     # Parallax background image
-     # CSS syntax, e.g. "a.jpg"
-     #"parallax_background_image": '_static/bg.jpg',
+      # Transition style (default(=convex)/none/fade/slide/concave/zoom)
+      'transition': 'default',
 
-     # Parallax background size
-     # CSS syntax, e.g. "3000px 2000px"
-     #"parallax_background_size": '2000px 900px',
+      # Transition speed (default/fast/slow)
+      'transition_speed': 'default',
 
-     # Focuses body when page changes visibility
-     # to ensure keyboard shortcuts work
-     "focus_body_on_page_visibility_change": True,
+      # Transition style for full page slide backgrounds (default(=convex)/none/fade/slide/concave/zoom)
+      'background_transition': 'default',
 
-     # Number of slides away from the current that are visible
-     "view_distance": 3,
- }
+      # Theme (black/white/league/beige/sky/night/serif/simple/solarized)
+      'theme': 'beige',
+
+      # Parallax background image
+      # CSS syntax, e.g. 'a.jpg'
+      #'parallax_background_image': '_static/bg.jpg',
+
+      # Parallax background size
+      # CSS syntax, e.g. '3000px 2000px'
+      #'parallax_background_size': '2000px 900px',
+
+      # Number of pixels to move the parallax background per slide
+      # - Calculated automatically unless specified
+      # - Set to 0 to disable movement along an axis
+      #'parallax_background_horizontal': None,
+      #'parallax_background_vertical': None,
+
+      # The display mode that will be used to show slides
+      'display': 'block'
+  }
 
 
 Multiplexing
---------------------
+------------
 
 https://github.com/hakimel/reveal.js#multiplexing
 
@@ -420,33 +444,9 @@ https://github.com/hakimel/reveal.js#multiplexing
 
  }
 
-Leap Motion
---------------------
-
-https://github.com/hakimel/reveal.js#leap-motion
-
-::
-
- html_theme_options = {
-
-  "leap": {
-     "autoCenter": True,
-     "gestureDelay": 500,
-     "naturalSwipe": False,
-     "pointerOpacity": 0.5,
-     "pointerColor": '#d80000',
-     "pointerSize": 15,
-     "pointerTolerance": 120,
-  },
-
-  "plugin_list": [
-    "_static/plugin/leap/leap.js",
-  ],
-
- }
 
 MathJax
---------------------
+-------
 
 https://github.com/hakimel/reveal.js#mathjax
 
@@ -467,8 +467,8 @@ https://github.com/hakimel/reveal.js#mathjax
  }
 
 
-Setting with  Javascript
---------------------------
+Setting with Javascript
+-----------------------
 
 It is also possible to change the settings by using the Javascript.
 
@@ -492,14 +492,16 @@ It is also possible to change the settings by using the Javascript.
 
 
 Requirement
-=============
-* Python 2.6, 2.7, 3.3, 3.4, or later
+===========
+
+* Python 2.6, 2.7, 3.3, 3.4, 3.5, 3.6 or later
 * Sphinx 1.2.x or later.
 
 Using
-=============
-* `Reveal.js 3.0.0 <http://lab.hakim.se/reveal-js/#/>`_
-* `jQuery 1.11.2 <http://jquery.com/>`_
+=====
+
+* `Reveal.js 3.5.0 <http://lab.hakim.se/reveal-js/#/>`_
+* `jQuery 3.2.1 <http://jquery.com/>`_
 
 License
 =======

@@ -1,0 +1,375 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"conf",
+				"configuration"
+			],
+			[
+				"raps",
+				"raspberrypi"
+			],
+			[
+				"Home",
+				"homebridge-vera"
+			],
+			[
+				"www",
+				"www-data"
+			],
+			[
+				"group",
+				"groupe"
+			],
+			[
+				"ngn",
+				"Nginx"
+			],
+			[
+				"un",
+				"une"
+			],
+			[
+				"va",
+				"vassaux"
+			],
+			[
+				"répert",
+				"répertoires"
+			],
+			[
+				"inter",
+				"interfaces"
+			],
+			[
+				"smbc_",
+				"smbc_enable"
+			],
+			[
+				"docker-",
+				"docker-compose"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/index.rst",
+			"settings":
+			{
+				"buffer_size": 11080,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/.gitignore",
+			"settings":
+			{
+				"buffer_size": 18,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 485.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/build/html"
+	],
+	"file_history":
+	[
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/conf.py",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/index2.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/_static/mysettings.js",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/_ext/special.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/_static/fragments.js",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/build/html/index.html",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/sphinx-revealjs/src/HISTORY.txt",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/build/html/_static/custom.js",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/_templates/layoutOLD.html",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/build/html/_static/jquery-3.1.0.js",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/servers_ip.rst",
+		"/Volumes/Data/Users/patrick/Downloads/index.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/Raspberrypi.rst",
+		"/Volumes/Data/Users/patrick/Dropbox/Epargne/macro_remove_xls_protection_OK_GOOD.txt",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/Homelive.rst",
+		"/Volumes/Data/Users/patrick/Dropbox/WD.txt",
+		"/Volumes/Data/Users/patrick/Downloads/2017-03-18T09-05-03.000Z_Running.tcx",
+		"/Volumes/Data/Users/patrick/LocalDocs/Logiciels/Pycharm License/Pycharm_license_3O1CAR2GO8.txt",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/MacOS-commands.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/Installs.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/DNS320-Alt-F.rst",
+		"/Volumes/Data/Users/patrick/projects/homeserver/docs/index.rst",
+		"/Volumes/Data/Users/patrick/Downloads/README-0.1RC5.txt",
+		"/Volumes/Data/Users/patrick/Downloads/DEBUG.txt",
+		"/Volumes/Data/Users/patrick/projects/if/update.sh",
+		"/Volumes/Data/Users/patrick/projects/if/cookies.txt",
+		"/Volumes/Data/Users/patrick/projects/if/includeURLs.txt",
+		"/Volumes/Data/Users/patrick/projects/if/.wgetrc",
+		"/Volumes/Data/Users/patrick/projects/if/wget.txt",
+		"/Volumes/Data/Users/patrick/projects/if/linvestisseurfrancais.com/club/index.html?p=35831.html",
+		"/Volumes/Data/Users/patrick/projects/if/linvestisseurfrancais.com/club/dom-security-ex-securidev-un-leader-regional-et-quelques-defis/index.html",
+		"/Volumes/Data/Users/patrick/projects/if/linvestisseurfrancais.com/club/index.html?p=758.html",
+		"/Volumes/Data/Users/patrick/projects/if/linvestisseurfrancais.com/club/1000mercis/index.html",
+		"/Volumes/Data/Users/patrick/.wgetrc",
+		"/Volumes/Data/Users/patrick/Downloads/PyCharm 2016 (Linux, Window)/ReadMe.txt",
+		"/Applications/PyCharm.app/Contents/bin/pycharm.vmoptions",
+		"/Volumes/NO NAME/Nemo.txt",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/Reverse proxy HTTPS.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/Docker for Mac.rst",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/Raspberrypi",
+		"/Volumes/Data/Users/patrick/projects/tech-docs/docker-compose.yml"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"data-trans",
+			"leap",
+			"parent(",
+			"parent",
+			"frag",
+			"});",
+			"\"",
+			"class",
+			".home",
+			"vnc",
+			"Pi",
+			"trigger",
+			"no_clobber",
+			"/,/",
+			"timestamp",
+			"--random",
+			"projects",
+			"skins/default/css/libs.css",
+			"\"\n",
+			"]",
+			"[",
+			"tcpdump"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"",
+			"'"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/source/index.rst",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1301,
+								1300
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/RestructuredText Improved/reStructuredText Improved.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 476.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Volumes/Data/Users/patrick/projects/tech-docs/test_reveals/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17,
+								17
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "test_reveals.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/tech-docs/servers_ip.rst"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/projects/tech-docs/Raspberrypi.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 522.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

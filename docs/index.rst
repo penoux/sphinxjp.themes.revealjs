@@ -1,6 +1,6 @@
-=================================================
+========================
 sphinxjp.themes.revealjs
-=================================================
+========================
 
 .. revealjs:: sphinxjp.themes.revealjs
  :title-heading: h2
@@ -54,7 +54,7 @@ sphinxjp.themes.revealjs
   .. raw:: html
 
    <a href="#/2" class="image">
-   <img width="178" height="238" src="/_images/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
+   <img width="178" height="238" src="_images/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
    </a>
 
 .. revealjs:: Slides

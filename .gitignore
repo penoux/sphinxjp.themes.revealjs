@@ -1,3 +1,4 @@
+__pycache__
 .installed.cfg
 *.pyc
 *.swp
@@ -13,3 +14,4 @@ parts
 .eggs
 .coverage
 .tox
+.DS_Store

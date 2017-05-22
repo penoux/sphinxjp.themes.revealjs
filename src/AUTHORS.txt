@@ -3,4 +3,10 @@ AUTHORS
 
 Sphinx template, css, packaging
 -------------------------------
+
 * tell-k <ffk2005 at gmail.com>
+
+Updates to Reveal 3.5.0 / JQuery 3.2.1
+--------------------------------------
+
+* penoux <patrick.enoux at orange.com>

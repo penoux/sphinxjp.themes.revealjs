@@ -97,45 +97,40 @@ Master layout template for Sphinx themes.
       Reveal.initialize({
         width: {{ theme_width }},
         height: {{ theme_height }},
-
         margin: {{ theme_margin }},
-
         minScale: {{ theme_min_scale }},
         maxScale: {{ theme_max_scale }},
-
         controls: {{ theme_controls|lower }},
         progress: {{ theme_progress|lower }},
+        defaultTiming: {{ theme_default_timing }},
+        slideNumber: {{ theme_slide_number|lower }},
         history: {{ theme_history|lower }},
-        center: {{ theme_center|lower }},
-
         keyboard : {{ theme_keyboard|lower }},
         overview: {{ theme_overview|lower }},
+        center: {{ theme_center|lower }},
         touch: {{ theme_touch|lower }},
         loop: {{ theme_loop|lower }},
         rtl: {{ theme_rtl|lower }},
+        shuffle: {{ theme_shuffle|lower }},
         fragments: {{ theme_fragments|lower }},
-
+        embedded: {{ theme_embedded|lower }},
+        help: {{ theme_help|lower }},
+        showNotes: {{ theme_show_notes|lower }},
+        autoPlayMedia: {{ theme_auto_play_media|lower }},
         autoSlide: {{ theme_auto_slide|lower }},
+        autoSlideStoppable: {{ theme_auto_slide_stoppable|lower }},
+        autoSlideMethod: {{ theme_auto_slide_method }},
         mouseWheel: {{ theme_mouse_wheel|lower }},
-        rollingLinks: {{ theme_rolling_links|lower }},
+        hideAddressBar: {{ theme_hide_address_bar|lower }},
         previewLinks: {{ theme_preview_links|lower }},
-
+        transition: Reveal.getQueryHash().transition || "{{ theme_transition }}",
         transitionSpeed: "{{ theme_transition_speed }}",
         backgroundTransition: "{{ theme_background_transition }}",
-
-        slideNumber: {{ theme_slide_number|lower }},
-        embedded: {{ theme_embedded|lower }},
-        autoSlideStoppable: {{ theme_auto_slide_stoppable|lower }},
-        hideAddressBar: {{ theme_hide_address_bar|lower }},
-
         parallaxBackgroundImage: "{{ theme_parallax_background_image }}",
         parallaxBackgroundSize: "{{ theme_parallax_background_size }}",
-
-        focusBodyOnPageVisiblityChange: {{ theme_focus_body_on_page_visibility_change|lower }},
-
-        viewDistance: {{ theme_view_distance }},
-
-        transition: Reveal.getQueryHash().transition || "{{ theme_transition }}",
+        parallaxBackgroundHorizontal: "{{ theme_parallax_background_horizontal }}",
+        parallaxBackgroundVertical: "{{ theme_parallax_background_vertical }}",
+        display: "{{ theme_display }}",
 
         {% if theme_multiplex %}
         multiplex: {
@@ -146,19 +141,6 @@ Master layout template for Sphinx themes.
             {% endfor %}
         },
         {% endif -%}
-        {%- if theme_leap %}
-        leap: {
-            {% for k, v in theme_leap.items() -%}
-                {% if k in ('autoCenter', 'naturalSwipe') -%}
-                    {{ k }}: {{ v|lower }}{% if not loop.last -%},{% endif %}
-                {% elif k in ('pointerColor') -%}
-                    {{ k }}: "{{ v }}"{% if not loop.last -%},{% endif %}
-                {% else -%}
-                    {{ k }}: {{ v }}{% if not loop.last -%},{% endif %}
-                {% endif -%}
-            {% endfor -%}
-        },
-        {% endif %}
         {%- if theme_math  %}
         math: {
             {% for k, v in theme_math.items() -%}

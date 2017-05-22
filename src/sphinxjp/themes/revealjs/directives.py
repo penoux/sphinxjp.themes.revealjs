@@ -7,10 +7,8 @@
     :copyright: tell-k. All Rights Reserved.
 """
 from docutils import nodes
-from docutils.parsers.rst import directives
+from docutils.parsers.rst import directives, Directive
 from docutils.parsers.rst.roles import set_classes
-
-from sphinx.util.compat import Directive
 
 from sphinxjp.themes.revealjs import compat
 
@@ -54,14 +52,22 @@ class RevealjsDirective(Directive):
         'subtitle': directives.unchanged,
         'subtitle-heading': directives.unchanged,
         'data-autoslide': directives.unchanged,
-        'data-markdown': directives.unchanged,
         'data-transition': directives.unchanged,
         'data-transition-speed': directives.unchanged,
         'data-background': directives.unchanged,
-        'data-background-repeat': directives.unchanged,
+        'data-background-color': directives.unchanged,
+        'data-background-image': directives.unchanged,
         'data-background-size': directives.unchanged,
+        'data-background-position': directives.unchanged,
+        'data-background-repeat': directives.unchanged,
+        'data-background-video': directives.unchanged,
+        'data-background-video-loop': directives.unchanged,
+        'data-background-video-muted': directives.unchanged,
         'data-background-transition': directives.unchanged,
+        'data-background-iframe': directives.unchanged,
+        'data-background-interactive': directives.unchanged,
         'data-state': directives.unchanged,
+        'data-markdown': directives.unchanged,
         'data-separator': directives.unchanged,
         'data-separator-vertical': directives.unchanged,
         'data-separator-notes': directives.unchanged,
@@ -96,9 +102,17 @@ class RevealjsDirective(Directive):
             'data-transition',
             'data-transition-speed',
             'data-background',
-            'data-background-repeat',
+            'data-background-color',
+            'data-background-image',
             'data-background-size',
+            'data-background-position',
+            'data-background-repeat',
+            'data-background-video',
+            'data-background-video-loop',
+            'data-background-video-muted',
             'data-background-transition',
+            'data-background-iframe',
+            'data-background-interactive',
             'data-state',
             'data-markdown',
             'data-separator',
@@ -197,9 +211,18 @@ def visit_revealjs(self, node):
         'data-transition',
         'data-transition-speed',
         'data-background',
-        'data-background-repeat',
+        'data-background-color',
+        'data-background-image',
         'data-background-size',
+        'data-background-position',
+        'data-background-repeat',
         'data-background-transition',
+        'data-background-video',
+        'data-background-video-loop',
+        'data-background-video-muted',
+        'data-background-transition',
+        'data-background-iframe',
+        'data-background-interactive',
         'data-state',
         'data-markdown',
         'data-separator',

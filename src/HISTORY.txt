@@ -1,6 +1,11 @@
 History
 =======
 
+0.3.5(May 22, 2017)
+---------------------
+* Upgrade Reveal.js version to 3.5.0
+* Upgrade JQuery version to v3.2.1
+
 0.3.0(May 5, 2015)
 ---------------------
 * Upgrade Reveal.js version to 3.0.0
